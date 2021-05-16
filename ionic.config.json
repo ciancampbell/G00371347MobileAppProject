@@ -1,5 +1,8 @@
 {
   "name": "G00371347Project",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }

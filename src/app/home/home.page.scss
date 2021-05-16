@@ -6,6 +6,7 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+ 
 }
 
 #container strong {
@@ -14,14 +15,64 @@
 }
 
 #container p {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 25px;
 
-  color: #8c8c8c;
+  color: #797878;
 
-  margin: 0;
+  margin: 10;
 }
 
 #container a {
   text-decoration: none;
 }
+
+ion-content ion-toolbar {
+  --background: dark;
+}
+
+//styled code in css to keep main html code tidier
+//set all items attributes in html page here.
+h5{
+  font-family: verdana;
+  font-size: 18px;
+  font-style: bold;
+  width: 320px;
+  height: 40x;
+  border: 2px solid black;   
+  background-color: grey; 
+}
+h3{
+  font-family: verdana;
+  font-size: 45px;
+}
+
+nav{
+  padding : 5px
+}
+
+ul{
+  padding : 5px;
+}
+
+ion-button{
+  display: inline-block;
+  font-size: 20px;
+  width: 400px;
+  height: 100px;
+  border-radius: 25px;
+  padding: 5px;
+  border: 5px solid black;    
+  background-color: black; 
+  margin: auto;
+  width : 50%;
+
+}
+
+
+ 
+
+
+
+
+

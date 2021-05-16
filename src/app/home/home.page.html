@@ -1,20 +1,32 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content style='--background: rgb(51, 135, 190);'>
+  <nav>
+    <ul>
+      <!--[routerLink]="/.." allows us to navigate between apges in your application -->
+      <ion-button color="dark" [routerLink]="['/movies']">
+        <ion-icon name="videocam-outline" slot="start"></ion-icon> Top 5 movies of 2021
+      </ion-button>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+      <ion-button color="dark" [routerLink]="['/most-popular']">
+        <ion-icon name="videocam-outline" slot="start"></ion-icon>Top Movies of the Decade:
+      </ion-button>
+    </ul>
+  </nav>
+<!--Used nav to place buttons side by side-->
+  <nav>
+    <ul>
+      <ion-button color="dark" [routerLink]="['/plugin']">
+        <ion-icon name="shuffle-outline"></ion-icon> Random feature
+      </ion-button>
+
+      <ion-button color="dark" [routerLink]="['/feedback']">
+        <ion-icon name="chatbubble-ellipses-outline" slot="start"></ion-icon>Give us your feedback
+      </ion-button>
+    </ul>
+  </nav>
+
+  <hr><!--Data Persistence-->
+  <!-- Showing saved data from feedback paged -->
+  <h5 color="dark">Your Rating:{{userFeedback}}</h5>
 </ion-content>

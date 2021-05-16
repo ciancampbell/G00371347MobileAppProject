@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Top 5 movies of 2021</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content style="--background: black;">
+  <!--Two way data binding-->
+  <!--looping through data retrieved from getMovieData()-->
+  <ion-card color="danger" *ngFor="let z of movieData">
+    <ion-card-header>
+      <ion-card-title>Title : {{z.Title}}</ion-card-title>
+      <ion-card-subtitle>Year: {{z.Year}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{z.Plot}}
+    </ion-card-content>
+    <div style="width:50%; text-align:center">
+      <img src="{{z.Poster}}" style="width:50%; height:50%;" />
+    </div>
+  </ion-card>
+</ion-content>
